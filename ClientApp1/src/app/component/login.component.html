@@ -1,0 +1,24 @@
+<div class="component-container">
+    <div class="header"></div>
+    <form [formGroup]="form" (ngSubmit)="login()">
+        <div class="form-body first-row">
+            <mat-form-field>
+                <input matInput placeholder="Enter Username" type="Email" id="username" formControlName="username"
+                    required class="form-control">
+                <mat-error *ngIf="username.invalid && username.touched">Username can't be blank</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-body">
+            <mat-form-field>
+                <input matInput placeholder="Enter your password" [type]="password" id="password" formControlName="password"
+                    required class="form-control">
+                <mat-error *ngIf="password.invalid && password.touched">Password need to be more than 8
+                    characters</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-body">
+            <button mat-raised-button color="primary" [disabled]="!form.valid" class="submit-btn">Sign In</button>
+        </div>
+        <div class="form-body"></div>
+    </form>
+</div>

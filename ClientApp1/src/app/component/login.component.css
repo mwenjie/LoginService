@@ -1,0 +1,30 @@
+.component-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 40px;
+    margin-top:0px
+}
+
+.form-body{
+    background-color: white;
+    width:100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.submit-btn{
+    display: block;
+    margin:auto;
+    width: 48%;
+    border: none;
+    padding: 0px 28px;
+    font-size: 14px;
+    cursor: pointer;
+  }

@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    background-image: url("../assets/background.jpg");
+    background-size:cover;
+    height: 100vh;
+  }
+
+.item-main {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
